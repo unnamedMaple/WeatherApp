@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:text=""
+            android:layout_weight="0.91" />
+
+        <TextView
+
+            android:layout_width="199dp"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ToAdd2"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:shownWeekCount="4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="?attr/colorControlHighlight"
+        android:orientation="vertical"></LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/dayPlan"
+        android:layout_width="match_parent"
+        android:layout_height="122dp">
+
+
+    </FrameLayout>
+</LinearLayout>

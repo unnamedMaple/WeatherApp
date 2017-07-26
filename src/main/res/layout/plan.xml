@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:orientation="vertical"
+        android:layout_weight="0.67"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/editEventB"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+
+                android:background="@android:color/transparent"
+                android:text="更改"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.01"
+                android:orientation="horizontal"></LinearLayout>
+
+            <Button
+                android:id="@+id/addEventB"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="添加"
+                android:textColor="@android:color/background_light"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.13">
+
+            <EditText
+                android:id="@+id/tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="标题" />
+
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="地点" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal"></LinearLayout>
+
+        <EditText
+            android:id="@+id/event"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.63"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="事件" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.08">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:text="时间"
+                android:textAlignment="center"
+                android:paddingTop="25dp"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/dateselView"
+                android:layout_width="177dp"
+                android:layout_height="65dp"
+                android:text="2017年7月20日"
+                android:paddingTop="25dp"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/timeselView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9:10"
+                android:textAlignment="center"
+                android:paddingTop="25dp"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:background="#FFFFFF"
+>
+
+    <Spinner
+        android:id="@+id/province"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="75px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="7px"
+        android:drawSelectorOnTop="true" />
+
+    <Spinner
+        android:id="@+id/city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/province"
+        android:layout_marginLeft="75px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="3px"
+        android:drawSelectorOnTop="true" />
+
+    　　</RelativeLayout>  
